@@ -61,7 +61,7 @@ grafico_valor = px.bar(plot_valor, x="Valor_Cliente", y="count", title="Clientes
                        labels={"count":"Quantidade", "Valor_Cliente":"Categoria de Valor"},)
 
 plot_engajamento = (tabela_filtro['Engajamento'].value_counts().reset_index())
-grafico_engajamento = px.bar(plot_engajamento, x="Engajamento",y="count", title="Clientes por nível de Engajamento",
+grafico_engajamento = px.bar(plot_engajamento, x="Engajamento",y="count", title="Clientes por Engajamento",
                              labels={"count":"Quantidade", "Engajamento":"Nível de Engajamento"},)
 
 
