@@ -57,7 +57,7 @@ grafico_faixa = px.bar(plot_faixa, x="Faixa_Etaria", y="count",
                        title="Clientes por Faixa Etária", labels={"count":"Quantidade", "Faixa_Etaria":"Faixa Etária"},)
 
 plot_valor = (tabela_filtro['Valor_Cliente'].value_counts().reset_index())
-grafico_valor = px.bar(plot_valor, x="Valor_Cliente", y="count", title="Clientes por categoraia de Valor",
+grafico_valor = px.bar(plot_valor, x="Valor_Cliente", y="count", title="Clientes por categoria de Valor",
                        labels={"count":"Quantidade", "Valor_Cliente":"Categoria de Valor"},)
 
 plot_engajamento = (tabela_filtro['Engajamento'].value_counts().reset_index())
